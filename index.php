@@ -13,6 +13,7 @@ img {
 <body>
 
 <img src="https://www.leagueoflegends.com/static/open-graph-b580f0266cc3f0589d0dc10765bc1631.jpg" alt="...">
+<p> </p>
   <style> h3{ text-align: center;} </style>
   <h3><span class="badge bg-secondary">Welcome, here is a quick explanation of League of Legends terminology.</span></h3>
 <p>
