@@ -21,21 +21,21 @@ img {
         <strong> Champion
       </button>
     </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong> A Champion is a playable character within the game. Each Champion has a different and unique set of abilities. 
+        A Champion is a playable character within the game. Each Champion has a different and unique set of abilities. 
       </div>
     </div>
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Class
+       <strong> Class
       </button>
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong> A Class determines a Champion's ideal play style. Behavior, responses, and reactions are what help decide a class. 
+        A Class determines a Champion's ideal play style. Behavior, responses, and reactions are what help decide a class. 
           <br>
           Examples are Fighter, Mage, Tank, Marksmen, Assassin.
       </div>
@@ -44,12 +44,12 @@ img {
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Lane
+        <strong> Lane
       </button>
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong> A Lane is where a Champion resides throughout the length of a game. Depending on the class and/or playstyle, this is what decides where the champion is played.
+        A Lane is where a Champion resides throughout the length of a game. Depending on the class and/or playstyle, this is what decides where the champion is played.
           <br>
           Examples are Top, Jungle, Mid, Bottom, and Support.
       </div>
