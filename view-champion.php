@@ -8,7 +8,7 @@
     </thead>
     <tbody>
 <?php
-while ($champions = $Champion->fetch_assoc()) {
+while ($champions = $champion->fetch_assoc()) {
 ?>
   <tr>
     <td><?php echo $champions['champ_name']; ?></td>
