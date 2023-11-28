@@ -13,11 +13,9 @@
 while ($champions = $champion->fetch_assoc()) {
 ?>
   <tr>
-    <strong>
-    <td><?php echo $champions['champ_name']; ?></td>
+    <td><strong><?php echo $champions['champ_name']; ?></strong></td>
     <td><?php echo $champions['class_id']; ?></td>
     <td><?php echo $champions['lane_id']; ?></td>
-    </strong>
   </tr>
 <?php
 }
