@@ -4,7 +4,7 @@ include "view-header.php";
 ?>
 <style>
 body {
-    background-image: url('https://images.vexels.com/content/174909/preview/asian-geometric-pattern-design-971f89.png');
+    background-image: url('https://st4.depositphotos.com/22949604/24475/v/1600/depositphotos_244751738-stock-illustration-chinese-traditional-oriental-ornament-background.jpg');
     background-size: cover;
     background-position: center;
 }
