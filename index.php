@@ -4,7 +4,7 @@ include "view-header.php";
 ?>
 <style>
 body {
-    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/007/167/520/small/geometric-line-circles-pattern-background-design-perfect-for-fashion-print-fabric-clothing-free-vector.jpg');
+    background-image: url('https://images.vexels.com/content/174909/preview/asian-geometric-pattern-design-971f89.png');
     background-size: cover;
     background-position: center;
 }
