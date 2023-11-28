@@ -4,10 +4,10 @@ include "view-header.php";
 ?>
 <style>
 body {
-    background-image: url('https://c8.alamy.com/comp/2EK4KFM/rough-grainy-white-paint-structure-background-grungy-light-grey-texture-rugged-urban-pattern-for-cool-abstract-effect-granular-grunge-surface-2EK4KFM.jpg');
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/007/167/520/small/geometric-line-circles-pattern-background-design-perfect-for-fashion-print-fabric-clothing-free-vector.jpg');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
 }
 img {
   display: block;
