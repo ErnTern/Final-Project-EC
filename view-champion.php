@@ -5,6 +5,7 @@ body {
     background-position: center;
 }
 </style>
+    <div class = "container">
 <h1><span class="badge text-bg-light">Champions</span></h1>
 <div class="table-responsive">
   <table class="table">
