@@ -4,6 +4,8 @@ body {
     background-size: cover;
     background-position: center;
 }
+</style>
+
 <h1>Champions</h1>
 <div class="table-responsive">
   <table class="table">
