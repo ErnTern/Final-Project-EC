@@ -13,7 +13,7 @@ img {
 <body>
 
 <img src="https://www.leagueoflegends.com/static/open-graph-b580f0266cc3f0589d0dc10765bc1631.jpg" alt="...">
-  <h1>Welcome, here is a quick explanation of League of Legends terminology. </h1>
+  <h3>Welcome, here is a quick explanation of League of Legends terminology. </h1>
 <p>
   <div class="accordion" id="accordionExample">
   <div class="accordion-item">
