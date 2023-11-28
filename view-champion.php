@@ -3,9 +3,9 @@
   <table class="table">
     <thead>
       <tr>
-      <h1><th>Name</th></h1>
-      <th><h2>Class</h2></th>
-      <th>Lane</th>
+      <th><h3>NAME</h3></th>
+      <th><h3>CLASS</h3></th>
+      <th><h3>LANE</h3></th>
       </tr>
     </thead>
     <tbody>
