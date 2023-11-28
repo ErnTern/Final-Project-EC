@@ -3,7 +3,7 @@
   <table class="table">
     <thead>
       <tr>
-      <th>Name</th>
+      <h4><th>Name</th></h4>
       <th>Class</th>
       <th>Lane</th>
       </tr>
