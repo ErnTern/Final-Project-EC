@@ -20,16 +20,16 @@
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Champions</a>
+          <a class="nav-link active" aria-current="champions.php" href="/">Champions</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Lanes</a>
+          <a class="nav-link active" aria-current="lanes.php" href="/">Lanes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Class</a>
+          <a class="nav-link active" aria-current="class.php" href="/">Class</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Filter</a>
+          <a class="nav-link active" aria-current="filter.php" href="/">Filter</a>
         </li>
       </ul>
     </div>
