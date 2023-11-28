@@ -3,6 +3,12 @@ $pageTitle = "Home";
 include "view-header.php";
 ?>
 <style>
+body {
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/007/167/520/small/geometric-line-circles-pattern-background-design-perfect-for-fashion-print-fabric-clothing-free-vector.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 img {
   display: block;
   margin-left: auto;
