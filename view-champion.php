@@ -7,7 +7,6 @@ body {
 </style>
     <div class = "container">
 <h1><span class="badge text-bg-light">Champions</span></h1>
-<div class="badge text-bg-light">
 <div class="table-responsive">
   <table class="table">
     <thead>
@@ -31,5 +30,4 @@ while ($champions = $champion->fetch_assoc()) {
 ?>
     </tbody>
   </table>
-</div>
 </div>
