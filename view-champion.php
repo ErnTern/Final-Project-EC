@@ -5,8 +5,7 @@ body {
     background-position: center;
 }
 </style>
-
-<h1>Champions</h1>
+<h1><span class="badge text-bg-light">Champions</span></h1>
 <div class="table-responsive">
   <table class="table">
     <thead>
