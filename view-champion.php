@@ -3,6 +3,18 @@ body {
     background-image: url('https://st4.depositphotos.com/22949604/24475/v/1600/depositphotos_244751738-stock-illustration-chinese-traditional-oriental-ornament-background.jpg');
     background-size: cover;
     background-position: center;
+.table {
+    border-radius: 10px; /* Adjust the radius as needed */
+    overflow: hidden; /* Ensure rounded corners are visible */
+}
+
+th {
+    border-radius: 10px 10px 0 0; /* Top rounded corners */
+}
+
+td {
+    border-radius: 0 0 10px 10px; /* Bottom rounded corners */
+}
 }
 </style>
     <div class = "container">
