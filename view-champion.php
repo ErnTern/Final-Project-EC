@@ -19,7 +19,7 @@ td {
 </style>
     <div class = "container">
 <h1><span class="badge text-bg-light">Champions</span></h1>
-<img src="https://cdn.pixabay.com/photo/2017/07/11/13/56/user-2493635_1280.png" alt="...">
+<img src="https://cdn.pixabay.com/photo/2017/07/11/13/56/user-2493635_1280.png" width="50" height="auto" alt="...">
 <div class="table-responsive">
   <table class="table">
     <thead>
