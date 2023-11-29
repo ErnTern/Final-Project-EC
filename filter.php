@@ -1,6 +1,6 @@
 <?php
 require_once("util-db.php");
-require_once("filter.php");
+require_once("model-filter.php");
 
 $pageTitle = "Champion by Class";
 include "view-header.php";
