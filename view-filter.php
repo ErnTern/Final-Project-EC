@@ -72,9 +72,9 @@
                         <ul class="list-group">
                             <?php
                             $class = selectClassByChampion($champions['champ_id']);
-                            while ($class = $class->fetch_assoc()) {
+                            while ($classes = $class->fetch_assoc()) {
                             ?>
-                                <li class="list-group-item"><?php echo $class['champ_name']; ?> - <?php echo $class['lane_id']; ?></li>
+                                <li class="list-group-item"><?php echo $classes['champ_name']; ?> - <?php echo $classes['lane_id']; ?></li>
                             <?php
                             }
                             ?>
