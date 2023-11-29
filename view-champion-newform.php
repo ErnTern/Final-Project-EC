@@ -1,6 +1,6 @@
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
+  <img src="https://cdn.pixabay.com/photo/2017/07/11/13/56/user-2493635_1280.png" width="50" height="auto" alt="...">
 </button>
 
 <!-- Modal -->
