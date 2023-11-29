@@ -28,7 +28,7 @@
           <a class="nav-link active" href="class.php">Class</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href=""filter.php"">Filter</a>
+          <a class="nav-link active" href="filter.php">Filter</a>
         </li>
       </ul>
     </div>
