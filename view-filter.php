@@ -1,47 +1,91 @@
-<style>
-body {
-    background-image: url('https://static.vecteezy.com/system/resources/previews/007/169/379/original/japanese-sayagata-asian-traditional-geometric-seamless-pattern-with-light-yellow-gold-color-background-use-for-fabric-textile-cover-interior-decoration-elements-wrapping-vector.jpg');
-    background-size: cover;
-    background-position: center;
-.table {
-    border-radius: 10px; /* Adjust the radius as needed */
-    overflow: hidden; /* Ensure rounded corners are visible */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url('https://static.vecteezy.com/system/resources/previews/007/169/379/original/japanese-sayagata-asian-traditional-geometric-seamless-pattern-with-light-yellow-gold-color-background-use-for-fabric-textile-cover-interior-decoration-elements-wrapping-vector.jpg');
+            background-size: cover;
+            background-position: center;
+        }
 
-th {
-    border-radius: 10px 10px 0 0; /* Top rounded corners */
-}
+        .table {
+            border-radius: 10px; /* Adjust the radius as needed */
+            overflow: hidden; /* Ensure rounded corners are visible */
+        }
 
-td {
-    border-radius: 0 0 10px 10px; /* Bottom rounded corners */
-}
-}
-</style>
-    <div class = "container">
-<h1>Champions by Class</h1>
-<div class="card-group">
+        th {
+            border-radius: 10px 10px 0 0; /* Top rounded corners */
+        }
 
-<?php
-while ($champions = $champion->fetch_assoc()) {
-?>
-    <div class="card">
-    <div class="card-body">
-      <h5 class="card-title"><?php echo $class['class_id']; ?></h5>
-      <p class="card-text">
-        <ul class="list-group">
-<?php
-  $class = selectClassByChampion($champions['champ_id']);
-  while ($class = $class->fetch_assoc()){
-?>
-      <li class="list-group-item"><?php echo $class['champ_name']; ?> - <?php echo $class['lane_id'];?></li>
-<?php
-  }
-?>
-    </ul>
-    </p>
+        td {
+            border-radius: 0 0 10px 10px; /* Bottom rounded corners */
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .card-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            width: 200px; /* Adjust the card width as needed */
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .card-body {
+            padding: 10px;
+        }
+
+        .list-group {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .list-group-item {
+            border: 1px solid #ccc;
+            border-top: none;
+            border-radius: 0 0 10px 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Champions by Class</h1>
+        <div class="card-group">
+            <?php
+            while ($champions = $champion->fetch_assoc()) {
+            ?>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><?php echo $class['class_id']; ?></h5>
+                    <p class="card-text">
+                        <ul class="list-group">
+                            <?php
+                            $class = selectClassByChampion($champions['champ_id']);
+                            while ($class = $class->fetch_assoc()) {
+                            ?>
+                                <li class="list-group-item"><?php echo $class['champ_name']; ?> - <?php echo $class['lane_id']; ?></li>
+                            <?php
+                            }
+                            ?>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <?php
+            }
+            ?>
+        </div>
     </div>
-  </div>
-<?php
-}
-?>
-</div>
+</body>
+</html>
