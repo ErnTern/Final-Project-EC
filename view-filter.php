@@ -67,7 +67,7 @@
             ?>
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title"><?php echo $class['class_id']; ?></h5>
+                    <h5 class="card-title"><?php echo $champions['champ_name']; ?></h5>
                     <p class="card-text">
                         <ul class="list-group">
                             <?php
