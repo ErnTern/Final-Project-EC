@@ -43,7 +43,6 @@ while ($champions = $champion->fetch_assoc()) {
                 <td>
               
                 </td>
-        <td>
               <?PHP
                 include "view-champion-editform.php";
                 ?>
