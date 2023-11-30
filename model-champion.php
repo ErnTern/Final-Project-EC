@@ -45,7 +45,7 @@ function deleteChampion($chID) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("DELETE 'Champion' WHERE `champ_id` = ?");
-        $stmt ->bind_param("i",$chID);
+        $stmt->bind_param("i",$chID);
         $success = $stmt->execute();
         $conn->close();
         return $success;
