@@ -29,7 +29,7 @@ td {
       <th><h3>NAME</h3></th>
       <th><h3>CLASS</h3></th>
       <th><h3>LANE</h3></th>
-        <the><h3></h3></th>
+        <th><h3></h3></th>
       </tr>
     </thead>
     <tbody>
