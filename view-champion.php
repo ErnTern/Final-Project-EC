@@ -29,7 +29,7 @@ td {
       <th><h3>NAME</h3></th>
       <th><h3>CLASS</h3></th>
       <th><h3>LANE</h3></th>
-          <th><h3>EDIT/DELETE</h3></th>
+      <th><h3>EDIT/DELETE</h3></th>
       </tr>
     </thead>
     <tbody>
@@ -40,9 +40,7 @@ while ($champions = $champion->fetch_assoc()) {
     <td><strong><?php echo $champions['champ_name']; ?></strong></td>
     <td><?php echo $champions['class_id']; ?></td>
     <td><?php echo $champions['lane_id']; ?></td>
-    <td>
-    <?PHP include "view-champion-editform.php"; ?>
-    </td>
+    <td><?php include "view-champion-editform.php"; ?></td>
   </tr>
 <?php
 }
