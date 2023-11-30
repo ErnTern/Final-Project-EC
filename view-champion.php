@@ -41,7 +41,7 @@ while ($champions = $champion->fetch_assoc()) {
     <td><?php echo $champions['class_id']; ?></td>
     <td><?php echo $champions['lane_id']; ?></td>
                 <td>
-    <div display: inline-block;>
+    <div style = "display: inline-block";>
                 <?PHP
                 include "view-champion-editform.php";
                 ?>
