@@ -41,6 +41,9 @@ while ($champions = $champion->fetch_assoc()) {
     <td><?php echo $champions['class_id']; ?></td>
     <td><?php echo $champions['lane_id']; ?></td>
         <td>
+                <?PHP
+                include "view-champion-editform.php"
+                ?>
             <form method = "post" action = "">
             <input type = "hidden" name="chID" value ="<?php echo $champions['champ_id']; ?>">
             <input type = "hidden" name = "actionType" value = "Delete">
