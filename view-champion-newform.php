@@ -1,5 +1,5 @@
 <!-- Button trigger modal -->
-<button type="button" data-bs-toggle="modal" data-bs-target="#newChampModal">
+<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#newChampModal">
   <img src="https://cdn.pixabay.com/photo/2017/07/11/13/56/user-2493635_1280.png" width="50" height="auto" alt="...">
 </button>
 
