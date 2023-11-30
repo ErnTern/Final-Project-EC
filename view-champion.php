@@ -22,9 +22,6 @@ td {
     <?PHP
     include "view-champion-newform.php"
     ?>
-    <?PHP
-    include "view-champion-delete.php"
-    ?>
 <div class="table-responsive">
   <table class="table">
     <thead>
@@ -32,6 +29,17 @@ td {
       <th><h3>NAME</h3></th>
       <th><h3>CLASS</h3></th>
       <th><h3>LANE</h3></th>
+    <td>
+    </td>
+        <td>
+            <form method = "post" action = "">
+            <input type = "hidden" name="chID" value ="<?php echo $champion['champ_id']; ?>">
+            <input type = "hidden" name = "actionType" value = "Delete">
+            <button type="submit" class="btn" onclick = "return confirm('Confirm deletion.');">
+                <img src="https://cdn.imgbin.com/12/12/11/solid-web-buttons-icon-trash-icon-delete-icon-DGwAE9mE.jpg" width="50" height="auto" alt="...">
+            </button>
+            </form>
+        </td>
       </tr>
     </thead>
     <tbody>
