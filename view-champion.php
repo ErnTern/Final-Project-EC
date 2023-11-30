@@ -42,7 +42,7 @@ while ($champions = $champion->fetch_assoc()) {
     <td><?php echo $champions['lane_id']; ?></td>
                 <td>
                 <?PHP
-                include "view-champion-editform1.php";
+                include "view-champion-editform.php";
                 ?>
                 </td>
         <td>
