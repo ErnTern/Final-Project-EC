@@ -40,23 +40,10 @@ while ($champions = $champion->fetch_assoc()) {
     <td><strong><?php echo $champions['champ_name']; ?></strong></td>
     <td><?php echo $champions['class_id']; ?></td>
     <td><?php echo $champions['lane_id']; ?></td>
-                <td>
-    <div style = "display: inline-block";>
-                <?PHP
-                include "view-champion-editform.php";
-                ?>
-
-                    <form method = "post" action = "">
-            <input type = "hidden" name="chID" value ="<?php echo $champions['champ_id']; ?>">
-            <input type = "hidden" name = "actionType" value = "Delete">
-            <button type="submit" class="btn" onclick = "return confirm('Confirm deletion.');">
-                <img src="https://cdn.imgbin.com/12/12/11/solid-web-buttons-icon-trash-icon-delete-icon-DGwAE9mE.jpg" width="20" height="auto" alt="...">
-            </button>
-            </form>
-    </div>
-                </td>
-              
-    </tr>
+    <td>
+    <?PHP include "view-champion-editform.php"; ?>
+    </td>
+  </tr>
 <?php
 }
 ?>
