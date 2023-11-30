@@ -18,10 +18,12 @@ td {
 }
 </style>
     <div class = "container">
+        <div style="display: flex; align-items: center;">
 <h1><span class="badge text-bg-light">Champions</span></h1>
     <?PHP
     include "view-champion-newform.php"
     ?>
+        </div>
 <div class="table-responsive">
   <table class="table">
     <thead>
