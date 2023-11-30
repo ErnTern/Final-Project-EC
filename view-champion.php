@@ -21,6 +21,8 @@ td {
 <h1><span class="badge text-bg-light">Champions</span></h1>
     <?PHP
     include "view-champion-newform.php"
+    ?>
+    <?PHP
     include "view-champion-delete.php"
     ?>
 <div class="table-responsive">
