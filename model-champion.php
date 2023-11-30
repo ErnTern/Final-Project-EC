@@ -44,7 +44,7 @@ function updateChampion($cName, $cID, $lID, $chID) {
 function deleteChampion($chID) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("DELETE FROM 'Champion' WHERE `champ_id` = ?");
+        $stmt = $conn->prepare("DELETE FROM Champion WHERE `Champion`.`champ_id` = ?");
         $stmt->bind_param("i",$chID);
         $success = $stmt->execute();
         $conn->close();
