@@ -13,7 +13,7 @@ function selectChampion() {
     }
 }
 
-function selectRoleByChampion($iid) {
+function selectClassByChampion($iid) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT champ_name, class_id FROM Champion WHERE champ_id = ?");
