@@ -41,6 +41,7 @@ while ($champions = $champion->fetch_assoc()) {
     <td><?php echo $champions['class_id']; ?></td>
     <td><?php echo $champions['lane_id']; ?></td>
                 <td>
+    <div>
                 <?PHP
                 include "view-champion-editform.php";
                 ?>
@@ -52,6 +53,7 @@ while ($champions = $champion->fetch_assoc()) {
                 <img src="https://cdn.imgbin.com/12/12/11/solid-web-buttons-icon-trash-icon-delete-icon-DGwAE9mE.jpg" width="20" height="auto" alt="...">
             </button>
             </form>
+    </div>
                 </td>
         <td>
             <form method = "post" action = "">
