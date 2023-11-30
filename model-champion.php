@@ -30,7 +30,7 @@ function addChampion($cName, $cID, $lID) {
 function updateChampion($cName, $cID, $lID, $chID) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE `Champion` SET `champ_name` = ?, `class_id` = ?, `lane_id` = '?' WHERE `Champion`.`champ_id` = ?");
+        $stmt = $conn->prepare("UPDATE `Champion` SET `champ_name` = ?, `class_id` = ?, `lane_id` = ? WHERE `Champion`.`champ_id` = ?");
         $stmt ->bind_param("sssi",$cName, $cID, $lID, $chID);
         $success = $stmt->execute();
         $conn->close();
