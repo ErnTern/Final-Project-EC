@@ -22,7 +22,7 @@ if (isset($_POST['actionType'])) {
       }
       break;
     case "Edit":
-      if (updateChampion($_POST['cName'], $_POST['cID'], $_POST['lID'], , $_POST['chID'])) {
+      if (updateChampion($_POST['cName'], $_POST['cID'], $_POST['lID'], $_POST['chID'])) {
         echo '<div class="alert alert-success" role="alert">Champion Edited.</div>';
       } else {
         echo '<div class="alert alert-danger" role="alert">Error.</div>';
