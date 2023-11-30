@@ -40,6 +40,11 @@ while ($champions = $champion->fetch_assoc()) {
     <td><strong><?php echo $champions['champ_name']; ?></strong></td>
     <td><?php echo $champions['class_id']; ?></td>
     <td><?php echo $champions['lane_id']; ?></td>
+                <td>
+                <?PHP
+                include "view-champion-editform.php"
+                ?>
+                </td>
         <td>
             <form method = "post" action = "">
             <input type = "hidden" name="chID" value ="<?php echo $champions['champ_id']; ?>">
@@ -49,11 +54,7 @@ while ($champions = $champion->fetch_assoc()) {
             </button>
             </form>
         </td>
-              <td>
-                <?PHP
-                include "view-champion-editform.php"
-                ?>
-                </td>
+              
     </tr>
 <?php
 }
