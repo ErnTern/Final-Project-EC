@@ -2,8 +2,9 @@
 function selectChampion() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT champ_id, champ_name, class_id, lane_id FROM `Champion`");
+        $stmt = $conn->prepare("SELECT c.champ_id, c.champ_name, c.class_id, c.lane_id, cl.class_id FROM Champion c JOIN Class cl ON c.class_id = cl.class_id;");
                                 //"SELECT champ_id, champ_name, class_id, lane_id FROM `Champion`" ---- old line 
+                                //SELECT c.champ_id, c.champ_name, c.class_id, c.lane_id, cl.class_id FROM Champion c JOIN Class cl ON c.class_id = cl.class_id;
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
