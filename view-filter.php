@@ -63,30 +63,35 @@
 <h1><span class="badge text-bg-light">Champions by Class</span></h1>
         <div class="card-group">
                                 <?php
-                                    while ($champions = $class1->fetch_assoc()) {
-                                    ?>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title"><?php echo $champions['class_id']; ?></h5>
-                                            <p class="card-text">
-                                                <ul class="list-group">
-                                                    <?php
-                                                    // Modify the query to retrieve champions by class
-                                                    $classChampions = selectClassByChampion($champions['class_id']);
-                                                    
-                                                    while ($champion = $classChampions->fetch_assoc()) {
-                                                    ?>
-                                                        <li class="list-group-item"><?php echo $champion['champ_name']; ?> - <?php echo $champion['lane_id']; ?></li>
-                                                    <?php
-                                                    }
-                                                    ?>
-                                                </ul>
-                                            </p>
+                                        while ($champions = $class1->fetch_assoc()) {
+                                        ?>
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5 class="card-title"><?php echo $champions['class_id']; ?></h5>
+                                                <p class="card-text">
+                                                    <ul class="list-group">
+                                                        <?php
+                                                        // Modify the query to retrieve champions by class
+                                                        $classChampions = selectClassByChampion($champions['class_id']);
+                                                        
+                                                        while ($champion = $classChampions->fetch_assoc()) {
+                                                            // Debugging: Output class ID and champion information
+                                                            echo "<pre>";
+                                                            print_r($champion);
+                                                            echo "</pre>";
+                                                        ?>
+                                                            <li class="list-group-item"><?php echo $champion['champ_name']; ?> - <?php echo $champion['lane_id']; ?></li>
+                                                        <?php
+                                                        }
+                                                        ?>
+                                                    </ul>
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <?php
-                                    }
-                                    ?>
+                                        <?php
+                                        }
+                                        ?>
+
 
         </div>
     </div>
