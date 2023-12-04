@@ -22,7 +22,11 @@
   </div>
     <div class="mb-3">
     <label for="cID" class="form-label">Class</label>
-    <input type="text" class="form-control" id="cID" name="cID">
+ <?PHP
+ $classList = selectClassForInput();
+ include "view-class-input.php";
+ ?>
+
   </div>
     <div class="mb-3">
     <label for="lID" class="form-label">Lane</label>
