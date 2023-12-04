@@ -36,7 +36,7 @@
     <?php
                     $ClassList = selecClassForInput();
                     $selectedClass = 0;
-                    include "view-sportid-input-list.php";
+                    include "view-class-input.php";
                     ?>
   </div>
     <div class="mb-3">
