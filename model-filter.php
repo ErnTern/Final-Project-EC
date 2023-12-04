@@ -18,7 +18,7 @@ function selectChampion() {
 function selectClassByChampion($iid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT champ_name, class_id, lane_id FROM Champion WHERE champ_id = ?"); // aarons line
+        $stmt = $conn->prepare("SELECT champ_name, class_id, lane_id FROM Champion WHERE champ_id = ?");
                                 //"SELECT champ_name, class_id, lane_id FROM Champion WHERE champ_id = ?" ---- committed old line
         $stmt->bind_param("i", $iid);
         $stmt->execute();
