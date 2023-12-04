@@ -88,7 +88,7 @@ function selectLaneForInput() {
 function countTop() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT COUNT(lane_id) FROM Champion WHERE lane_id = "Top"");
+        $stmt = $conn->prepare("SELECT COUNT(lane_id) FROM Champion WHERE lane_id = 'Top'");
        // $stmt->bind_param("i", $schIDD);
         $stmt->execute();
         $result = $stmt->get_result();
