@@ -72,7 +72,7 @@
                                                     <ul class="list-group">
                                                         <?php
                                                         // Modify the query to retrieve champions by class
-                                                        $classChampions = selectClassByChampion($champions['champ_id']);
+                                                        $classChampions = selectClassByChampion($champions['class_id']);
                                                         
                                                         while ($champion = $classChampions->fetch_assoc()) {
                                                         ?>
