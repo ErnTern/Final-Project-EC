@@ -65,7 +65,7 @@
             <?php
             while ($champions = $class1->fetch_assoc()) {
             ?>
-           <<div class="card">
+           <div class="card">
                 <div class="card-body">
                     <h5 class="card-title"><?php echo $champions['class_id']; ?></h5>
                     <p class="card-text">
