@@ -13,7 +13,7 @@
       labels: ['Top', 'Jungle', 'Mid', 'Bottom', 'Support'],
       datasets: [{
         label: 'Number of Champions Per Lane',
-        data: [<?php $countTop ?>, 19, 3, 5, 2],
+        data: [<?php echo $countTop ?>, 19, 3, 5, 2],
         borderWidth: 1
       }]
     },
