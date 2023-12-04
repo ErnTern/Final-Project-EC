@@ -70,4 +70,18 @@ function selectClassForInput() {
     }
 }
 
+function selectLaneForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT lane_id FROM `Lane` Order by lane_id");
+       // $stmt->bind_param("i", $schIDD);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
 ?>
