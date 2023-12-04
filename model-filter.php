@@ -17,7 +17,7 @@ function selectChampion() {
 function selectClass() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT champ_id, champ_name, class_id, lane_id FROM `Class`");
+        $stmt = $conn->prepare("SELECT class_id FROM Class");
                                 //"SELECT class_id FROM Class"
                                 //"SELECT champ_id, champ_name, class_id, lane_id FROM `Champion`" ---- old line 
         $stmt->execute();
