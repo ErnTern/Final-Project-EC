@@ -60,7 +60,7 @@
 </head>
 <body>
     <div class="container">
-<h1><span class="badge text-bg-light">Champions by Class</span></h1>
+<h1><span class="badge text-bg-light">Champions by Class CHANGE</span></h1>
         <div class="card-group">
                                 <?php
                                         while ($champions = $class1->fetch_assoc()) {
@@ -75,10 +75,6 @@
                                                         $classChampions = selectClassByChampion($champions['class_id']);
                                                         
                                                         while ($champion = $classChampions->fetch_assoc()) {
-                                                            // Debugging: Output class ID and champion information
-                                                            echo "<pre>";
-                                                            print_r($champion);
-                                                            echo "</pre>";
                                                         ?>
                                                             <li class="list-group-item"><?php echo $champion['champ_name']; ?> - <?php echo $champion['lane_id']; ?></li>
                                                         <?php
