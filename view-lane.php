@@ -10,10 +10,10 @@
   new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      labels: ['Top', 'Jungle', 'Mid', 'Bottom', 'Support'],
       datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
+        label: 'Number of Champions Per Lane',
+        data: [12, 19, 3, 5, 2],
         borderWidth: 1
       }]
     },
