@@ -4,7 +4,6 @@ function selectChampion() {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT champ_id, champ_name, class_id, lane_id FROM `Champion`");
                                 //"SELECT champ_id, champ_name, class_id, lane_id FROM `Champion`" ---- old line 
-                                //"SELECT c.champ_name, c.class_id, c.lane_id FROM Champion c join Class cl on c.class_id=cl.class_id WHERE cl.class_id = ?" ---aarons line
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
@@ -20,6 +19,7 @@ function selectClassByChampion($iid) {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT champ_name, class_id, lane_id FROM Champion WHERE champ_id = ?");
                                 //"SELECT champ_name, class_id, lane_id FROM Champion WHERE champ_id = ?" ---- committed old line
+                                //"SELECT c.champ_name, c.class_id, c.lane_id FROM Champion c join Class cl on c.class_id=cl.class_id WHERE cl.class_id = ?" ---aarons line
         $stmt->bind_param("i", $iid);
         $stmt->execute();
         $result = $stmt->get_result();
