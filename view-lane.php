@@ -7,7 +7,7 @@
 function countTop() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT COUNT(lane_id) FROM Champion WHERE lane_id = 'Top'");
+        $stmt = $conn->prepare("SELECT COUNT(lane_id) AS topCount FROM Champion WHERE lane_id = 'Top'");
         $stmt->execute();
         $result = $stmt->get_result();
         $count = $result->fetch_assoc()['topCount'];
@@ -21,7 +21,6 @@ function countTop() {
 
 $countTop = countTop();
 ?>
-
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
