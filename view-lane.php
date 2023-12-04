@@ -40,6 +40,66 @@ function countJg() {
 
 $countJg = countJg();
 ?>
+
+<?php
+function countMid() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT COUNT(lane_id) AS midCount FROM Champion WHERE lane_id = 'Mid'");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $count = $result->fetch_assoc()['midCount'];
+        $conn->close();
+        return $count;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+$countMid = countMid();
+?>
+
+
+<?php
+function countBot() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT COUNT(lane_id) AS botCount FROM Champion WHERE lane_id = 'Bottom'");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $count = $result->fetch_assoc()['botCount'];
+        $conn->close();
+        return $count;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+$countBot = countBot();
+?>
+
+
+<?php
+function countSup() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT COUNT(lane_id) AS supCount FROM Champion WHERE lane_id = 'Support'");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $count = $result->fetch_assoc()['supCount'];
+        $conn->close();
+        return $count;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+$countSup = countSup();
+?>
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
@@ -51,7 +111,7 @@ $countJg = countJg();
       labels: ['Top', 'Jungle', 'Mid', 'Bottom', 'Support'],
       datasets: [{
         label: 'Number of Champions Per Lane',
-        data: [<?php echo $countTop; ?>, <?php echo $countJg; ?>, 3, 5, 2],
+        data: [<?php echo $countTop; ?>, <?php echo $countJg; ?>, <?php echo $countMid; ?>, <?php echo $countBot; ?>, <?php echo $countSup; ?>],
         borderWidth: 1
       }]
     },
