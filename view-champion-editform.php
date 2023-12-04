@@ -33,11 +33,7 @@
   </div>
     <div class="mb-3">
     <label for="cID<?php echo $champions['champ_id']; ?>" class="form-label">Class</label>
-    <?php
-                    $ClassList = selecClassForInput();
-                    $selectedClass = 0;
-                    include "view-class-input.php";
-                    ?>
+       <<input type="text" class="form-control" id="cID<?php echo $champions['champ_id']; ?>" name="cID" value = "<?php echo $champions['class_id']; ?>">
   </div>
     <div class="mb-3">
     <label for="lID<?php echo $champions['champ_id']; ?>" class="form-label">Lane</label>
