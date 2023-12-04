@@ -32,7 +32,7 @@ function selectClass() {
 function selectClassByChampion($iid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT c.champ_name, c.class_id, c.lane_id FROM Champion c join Class cl on c.class_id=cl.class_id WHERE cl.class_id = ?");
+        $stmt = $conn->prepare("SELECT c.champ_name, c.class_id, c.lane_id, c.champ_id FROM Champion c join Class cl on c.class_id=cl.class_id WHERE cl.class_id = ?");
                                 //"SELECT champ_name, class_id, lane_id FROM Champion WHERE champ_id = ?" ---- committed old line
                                 //"SELECT c.champ_name, c.class_id, c.lane_id FROM Champion c join Class cl on c.class_id=cl.class_id WHERE cl.class_id = ?" ---aarons line
         $stmt->bind_param("i", $iid);
