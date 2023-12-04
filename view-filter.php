@@ -67,7 +67,7 @@
             ?>
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title"><?php echo $champions['class_id']; ?></h5>
+                    <h5 class="card-title"><?php echo classes['class_id']; ?></h5>
                     <p class="card-text">
                         <ul class="list-group">
                             <?php
@@ -75,6 +75,7 @@
                             while ($classes = $class->fetch_assoc()) {
                             ?>
                                 <li class="list-group-item"><?php echo $classes['champ_name']; ?> - <?php echo $classes['lane_id']; ?></li>
+                            
                             <?php
                             }
                             ?>
