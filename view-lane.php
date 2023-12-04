@@ -2,6 +2,11 @@
   <canvas id="myChart"></canvas>
 </div>
 
+<?php
+// Example initialization of $countTop
+$countTop = 10;
+?>
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
