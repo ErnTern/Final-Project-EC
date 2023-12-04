@@ -60,7 +60,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Champions by Class</h1>
+<h1><span class="badge text-bg-light">Champions by Class</span></h1>
         <div class="card-group">
             <?php
             while ($champions = $class1->fetch_assoc()) {
