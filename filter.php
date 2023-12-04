@@ -4,7 +4,8 @@ require_once("model-filter.php");
 
 $pageTitle = "Champion by Class";
 include "view-header.php";
-$champion = selectChampion();
+//$champion = selectChampion();
+$class= selectClass();
 include "view-filter.php";
 include "view-footer.php";
 ?>
