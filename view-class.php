@@ -103,7 +103,7 @@ $countT = countT();
     data: {
       labels: ['Assassin', 'Fighter', 'Mage', 'Marksman', 'Tank'],
       datasets: [{
-        label: 'Number of Champions Per Lane',
+        label: 'Number of Champions Per Class',
         data: [<?php echo $countA; ?>, <?php echo $countF; ?>, <?php echo $countM; ?>, <?php echo $countMK; ?>, <?php echo $countT; ?>],
         borderWidth: 1
       }]
