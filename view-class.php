@@ -131,7 +131,4 @@ $countT = countT();
     }
   });
 </script>
-      }
-    }
-  });
-</script>
+
