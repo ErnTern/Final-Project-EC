@@ -102,7 +102,7 @@ $countT = countT();
     data: {
       labels: ['Assassin', 'Fighter', 'Mage', 'Marksman', 'Tank'],
       datasets: [{
-       label: <h1><span class="badge text-bg-light">Number of Champions per Class</span></h1>,
+       label: 'Number of Champions per Class',
         data: [<?php echo $countA; ?>, <?php echo $countF; ?>, <?php echo $countM; ?>, <?php echo $countMK; ?>, <?php echo $countT; ?>],
         backgroundColor: [
           'rgba(255, 99, 132, 0.5)', 
