@@ -2,7 +2,6 @@
   <canvas id="myChart1"></canvas>
 </div>
 
-<h1>Number of Champions per Class</h1>
 <?php
 function countA() {
     try {
@@ -103,7 +102,7 @@ $countT = countT();
     data: {
       labels: ['Assassin', 'Fighter', 'Mage', 'Marksman', 'Tank'],
       datasets: [{
-       // label: 'Number of Champions Per Class',
+       label: 'Number of Champions Per Class',
         data: [<?php echo $countA; ?>, <?php echo $countF; ?>, <?php echo $countM; ?>, <?php echo $countMK; ?>, <?php echo $countT; ?>],
         backgroundColor: [
           'rgba(255, 99, 132, 0.5)', // Red for Assassin
