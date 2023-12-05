@@ -45,7 +45,7 @@ img {
       <div class="accordion-body">
         A Class determines a Champion's ideal play style. Behavior, responses, and reactions are what help decide a class. 
           <br>
-          Examples are Fighter, Mage, Tank, Marksmen, Assassin.
+          <strong>Examples:</strong> Fighter, Mage, Tank, Marksmen, Assassin.
       </div>
     </div>
   </div>
@@ -59,7 +59,7 @@ img {
       <div class="accordion-body">
         A Lane is where a Champion resides throughout the length of a game. Depending on the class and/or playstyle, this is what decides where the champion is played.
           <br>
-          Examples are Top, Jungle, Mid, Bottom, and Support.
+          <strong>Examples:</strong> Top, Jungle, Mid, Bottom, and Support.
       </div>
     </div>
   </div>
