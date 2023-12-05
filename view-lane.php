@@ -113,10 +113,10 @@ $countSup = countSup();
         label: 'Number of Champions Per Lane',
         data: [<?php echo $countTop; ?>, <?php echo $countJg; ?>, <?php echo $countMid; ?>, <?php echo $countBot; ?>, <?php echo $countSup; ?>],
         backgroundColor: [
-        'rgba(255, 99, 132, 0.8)',
-        'rgba(255, 99, 132, 0.6)',
-        'rgba(255, 99, 132, 0.4)',
-        'rgba(255, 99, 132, 0.2)',
+        'rgba(255, 99, 132, 0.9)',
+        'rgba(255, 99, 132, 0.7)',
+        'rgba(255, 99, 132, 0.5)',
+        'rgba(255, 99, 132, 0.3)',
         'rgba(255, 99, 132, 0.1)'
           ],
         borderColor: [
