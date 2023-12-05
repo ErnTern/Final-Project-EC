@@ -105,6 +105,20 @@ $countT = countT();
       datasets: [{
         label: 'Number of Champions Per Class',
         data: [<?php echo $countA; ?>, <?php echo $countF; ?>, <?php echo $countM; ?>, <?php echo $countMK; ?>, <?php echo $countT; ?>],
+        backgroundColor: [
+          'rgba(255, 99, 132, 0.5)', // Red for Assassin
+          'rgba(54, 162, 235, 0.5)', // Blue for Fighter
+          'rgba(255, 206, 86, 0.5)', // Yellow for Mage
+          'rgba(75, 192, 192, 0.5)', // Green for Marksman
+          'rgba(153, 102, 255, 0.5)' // Purple for Tank
+        ],
+        borderColor: [
+          'rgba(255, 99, 132, 1)',
+          'rgba(54, 162, 235, 1)',
+          'rgba(255, 206, 86, 1)',
+          'rgba(75, 192, 192, 1)',
+          'rgba(153, 102, 255, 1)'
+        ],
         borderWidth: 1
       }]
     },
@@ -113,6 +127,10 @@ $countT = countT();
         y: {
           beginAtZero: true
         }
+      }
+    }
+  });
+</script>
       }
     }
   });
