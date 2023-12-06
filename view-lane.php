@@ -69,6 +69,7 @@ function countBot() {
 }
 $countBot = countBot();
 ?>
+
 <?php
 function countSup() {
     try {
@@ -87,7 +88,8 @@ function countSup() {
 
 $countSup = countSup();
 ?>
-<div id="myChart" style="width:100%; max-width:1000px; height:1000px;"></div>
+
+<div id="myChart" style="width:100%; max-width:600px; height:700px; margin: auto;"></div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
