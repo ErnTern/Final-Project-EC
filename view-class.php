@@ -1,4 +1,4 @@
-<div>
+<div id="myChartContainer1" style="width: 100%; max-width: 400px; height: 300px; margin: auto;">
   <canvas id="myChart1"></canvas>
 </div>
 
@@ -95,9 +95,9 @@ $countT = countT();
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
-  const ctx = document.getElementById('myChart1');
+  const ctx1 = document.getElementById('myChart1');
 
-  new Chart(ctx, {
+  new Chart(ctx1, {
     type: 'bar',
     data: {
       labels: ['Assassin', 'Fighter', 'Mage', 'Marksman', 'Tank'],
@@ -126,8 +126,9 @@ $countT = countT();
         y: {
           beginAtZero: true
         }
-      }
+      },
+      maintainAspectRatio: false,
+      aspectRatio: 0.8
     }
   });
 </script>
-
