@@ -130,6 +130,8 @@ $countSup = countSup();
       }]
     },
     options: {
+      responsive: false,
+      maintainAspectRatio: false,
       scales: {
         y: {
           beginAtZero: true
