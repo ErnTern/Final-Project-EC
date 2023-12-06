@@ -2,19 +2,38 @@
 $pageTitle = "Home";
 include "view-header.php";
 ?>
+
 <style>
-body {
+  body {
     background-image: url('https://static.vecteezy.com/system/resources/previews/007/169/379/original/japanese-sayagata-asian-traditional-geometric-seamless-pattern-with-light-yellow-gold-color-background-use-for-fabric-textile-cover-interior-decoration-elements-wrapping-vector.jpg');
     background-size: cover;
     background-position: center;
-}
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+    opacity: 0; /* Set initial opacity to 0 */
+    animation: fadeIn 0.5s ease-in-out forwards; /* Use animation to gradually increase opacity */
+  }
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h3 {
+    text-align: center;
+  }
+
+  /* Define the fadeIn animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 </style>
 </head>
+
 <body>
 
 <img src="https://www.leagueoflegends.com/static/open-graph-b580f0266cc3f0589d0dc10765bc1631.jpg" alt="...">
