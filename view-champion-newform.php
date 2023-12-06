@@ -23,21 +23,21 @@
     <div class="mb-3">
     <label for="cID" class="form-label">Class</label>
  <select class="form-select" id="cID" name="cID">
-              <option value="fighter">Fighter</option>
-              <option value="mage">Mage</option>
-              <option value="marksman">Marksman</option>
-              <option value="support">Support</option>
-              <option value="tank">Tank</option>
+              <option value="Fighter">Fighter</option>
+              <option value="Mage">Mage</option>
+              <option value="Marksman">Marksman</option>
+              <option value="Support">Support</option>
+              <option value="Tank">Tank</option>
             </select>
   </div>
     <div class="mb-3">
     <label for="lID" class="form-label">Lane</label>
    <select class="form-select" id="lID" name="lID">
-              <option value="top">Top</option>
-              <option value="jungle">Jungle</option>
-              <option value="mid">Mid</option>
-              <option value="bot">Bot</option>
-              <option value="support">Support</option>
+              <option value="Top">Top</option>
+              <option value="Jungle">Jungle</option>
+              <option value="Mid">Mid</option>
+              <option value="Bottom">Bottom</option>
+              <option value="Support">Support</option>
             </select>
   </div>
             <input type ='hidden' name='actionType' value="Add">
