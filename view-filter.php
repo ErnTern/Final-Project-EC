@@ -60,7 +60,7 @@
 </head>
 <body>
     <div class="container">
-<h1><span class="badge text-bg-light">Champions by Class CHANGE</span></h1>
+<h1><span class="badge text-bg-light">Champions by Class</span></h1>
         <div class="card-group">
                                 <?php
                                         while ($champions = $class1->fetch_assoc()) {
@@ -71,7 +71,6 @@
                                                 <p class="card-text">
                                                     <ul class="list-group">
                                                         <?php
-                                                        // Modify the query to retrieve champions by class
                                                         $classChampions = selectClassByChampion($champions['class_id']);
                                                         
                                                         while ($champion = $classChampions->fetch_assoc()) {
@@ -87,8 +86,6 @@
                                         <?php
                                         }
                                         ?>
-
-
         </div>
     </div>
 </body>
