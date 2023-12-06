@@ -15,6 +15,9 @@ th {
 td {
     border-radius: 0 0 10px 10px; /* Bottom rounded corners */
 }
+    
+    tbody tr:nth-child(even) {
+    background-color: #dcdcdc;
 }
 </style>
     <div class = "container">
