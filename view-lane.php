@@ -94,7 +94,7 @@ $countSup = countSup();
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
-  const ctx = document.getElementById('chartContainer'); // Corrected ID here
+  const ctx = document.getElementById('chartContainer').getContext('2d'); // Use getContext('2d')
   new Chart(ctx, {
     type: 'bar',
     data: {
@@ -125,5 +125,15 @@ $countSup = countSup();
         borderWidth: 1
       }]
     },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
   });
 </script>
+
