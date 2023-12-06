@@ -22,7 +22,13 @@
   </div>
     <div class="mb-3">
     <label for="cID" class="form-label">Class</label>
-<input type="text" class="form-control" id="cID" name="cID">
+ <select class="form-select" id="cID" name="cID">
+              <option value="fighter">Fighter</option>
+              <option value="mage">Mage</option>
+              <option value="marksman">Marksman</option>
+              <option value="support">Support</option>
+              <option value="tank">Tank</option>
+            </select>
   </div>
     <div class="mb-3">
     <label for="lID" class="form-label">Lane</label>
