@@ -128,7 +128,7 @@ $countT = countT();
         }
       },
       maintainAspectRatio: false,
-      aspectRatio: 0.8
+      aspectRatio: 0.5
     }
   });
 </script>
