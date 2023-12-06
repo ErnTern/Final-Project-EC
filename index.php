@@ -8,8 +8,11 @@ include "view-header.php";
     background-image: url('https://static.vecteezy.com/system/resources/previews/007/169/379/original/japanese-sayagata-asian-traditional-geometric-seamless-pattern-with-light-yellow-gold-color-background-use-for-fabric-textile-cover-interior-decoration-elements-wrapping-vector.jpg');
     background-size: cover;
     background-position: center;
-    opacity: 0; 
-    animation: fadeIn 1.0s ease-in-out forwards; 
+  }
+
+  .fade-in-content {
+    opacity: 0;
+    animation: fadeIn 1.0s ease-in-out forwards;
   }
 
   img {
@@ -32,6 +35,7 @@ include "view-header.php";
     }
   }
 </style>
+
 </head>
 
 <body>
