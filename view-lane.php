@@ -127,7 +127,7 @@ $countSup = countSup();
         }
       },
       maintainAspectRatio: false,
-      aspectRatio: 2
+      aspectRatio: .2
     }
   });
 </script>
