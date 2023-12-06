@@ -87,7 +87,7 @@ function countSup() {
 $countSup = countSup();
 ?>
 
-<div id="myChartContainer" style="width: 100%; max-width: 400px; height: 100%; height: 400px; margin: auto;">
+<div id="myChartContainer" style="width: 100%; max-width: 400px; height: 400px; margin: auto;">
   <canvas id="myChart"></canvas>
 </div>
 
@@ -127,7 +127,7 @@ $countSup = countSup();
         }
       },
       maintainAspectRatio: false,
-      aspectRatio: 0.8
+      aspectRatio: 2
     }
   });
 </script>
