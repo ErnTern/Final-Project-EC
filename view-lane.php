@@ -69,7 +69,6 @@ function countBot() {
 }
 $countBot = countBot();
 ?>
-
 <?php
 function countSup() {
     try {
@@ -85,36 +84,28 @@ function countSup() {
         throw $e;
     }
 }
-
 $countSup = countSup();
 ?>
 
-<div id="chartContainer" style="height: 370px; width: 100%;"></div>
-
+<div id="myChart" style="width: 100%; max-width: 600px; height: 1000px; margin: auto;"></div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
-  const ctx = document.getElementById('chartContainer').getContext('2d');
+  const ctx = document.getElementById('myChart');
   new Chart(ctx, {
     type: 'bar',
     data: {
       labels: ['Top', 'Jungle', 'Mid', 'Bottom', 'Support'],
       datasets: [{
         label: 'Number of Champions Per Lane',
-        data: [
-          <?php echo $countTop; ?>,
-          <?php echo $countJg; ?>,
-          <?php echo $countMid; ?>,
-          <?php echo $countBot; ?>,
-          <?php echo $countSup; ?>
-        ],
+        data: [<?php echo $countTop; ?>, <?php echo $countJg; ?>, <?php echo $countMid; ?>, <?php echo $countBot; ?>, <?php echo $countSup; ?>],
         backgroundColor: [
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(255, 206, 86, 0.4)',
-          'rgba(255, 206, 86, 0.6)',
-          'rgba(255, 206, 86, 0.8)',
-          'rgba(255, 206, 86, 1)',
-        ],
+        'rgba(255, 206, 86, 0.2)',
+        'rgba(255, 206, 86, 0.4)',
+        'rgba(255, 206, 86, 0.6)',
+        'rgba(255, 206, 86, 0.8)',
+        'rgba(255, 206, 86, 1)',
+          ],
         borderColor: [
           'rgba(255, 206, 86, 1)',
           'rgba(255, 206, 86, 1)',
@@ -125,6 +116,14 @@ $countSup = countSup();
         borderWidth: 1
       }]
     },
+    options: {
+      responsive: false,
+      maintainAspectRatio: false,
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
   });
 </script>
-
