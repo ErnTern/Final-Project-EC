@@ -34,7 +34,6 @@
     <div class="mb-3">
     <label for="cID<?php echo $champions['champ_id']; ?>" class="form-label">Class</label>
        <select class="form-select" id="cID<?php echo $champions['champ_id']; ?>" name="cID">
-              <!-- Add options based on your specific classes -->
               <option value="Assassin" <?php echo ($champions['class_id'] == 'Assassin') ? 'selected' : ''; ?>>Assassin</option>
               <option value="Fighter" <?php echo ($champions['class_id'] == 'Fighter') ? 'selected' : ''; ?>>Fighter</option>
               <option value="Mage" <?php echo ($champions['class_id'] == 'Mage') ? 'selected' : ''; ?>>Mage</option>
@@ -44,7 +43,13 @@
   </div>
     <div class="mb-3">
     <label for="lID<?php echo $champions['champ_id']; ?>" class="form-label">Lane</label>
-    <input type="text" class="form-control" id="lID<?php echo $champions['champ_id']; ?>" name="lID" value = "<?php echo $champions['lane_id']; ?>">
+   <select class="form-select" id="lID<?php echo $champions['champ_id']; ?>" name="lID">
+              <option value="Top" <?php echo ($champions['lane_id'] == 'Top') ? 'selected' : ''; ?>>Top</option>
+              <option value="Jungle" <?php echo ($champions['lane_id'] == 'Jungle') ? 'selected' : ''; ?>>Jungle</option>
+              <option value="Mid" <?php echo ($champions['lane_id'] == 'Mid') ? 'selected' : ''; ?>>Mid</option>
+              <option value="Bottom" <?php echo ($champions['lane_id'] == 'Bottom') ? 'selected' : ''; ?>>Bot</option>
+              <option value="Support" <?php echo ($champions['lane_id'] == 'Support') ? 'selected' : ''; ?>>Support</option>
+            </select>
   </div>
             <input type ='hidden' name='chID' value = "<?php echo $champions['champ_id']; ?>">
             <input type ='hidden' name='actionType' value="Edit">
