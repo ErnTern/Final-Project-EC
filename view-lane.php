@@ -127,7 +127,7 @@ $countSup = countSup();
         }
       },
       maintainAspectRatio: false,
-      aspectRatio: 0.8 // You can adjust this value to control the aspect ratio
+      aspectRatio: 0.8
     }
   });
 </script>
