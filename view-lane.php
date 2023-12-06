@@ -94,7 +94,7 @@ $countSup = countSup();
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
-  const ctx = document.getElementById('myChart');
+  const ctx = document.getElementById('chartContainer'); // Corrected ID here
   new Chart(ctx, {
     type: 'bar',
     data: {
