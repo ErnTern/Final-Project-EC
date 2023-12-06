@@ -33,7 +33,14 @@
   </div>
     <div class="mb-3">
     <label for="cID<?php echo $champions['champ_id']; ?>" class="form-label">Class</label>
-       <<input type="text" class="form-control" id="cID<?php echo $champions['champ_id']; ?>" name="cID" value = "<?php echo $champions['class_id']; ?>">
+       <select class="form-select" id="cID<?php echo $champions['champ_id']; ?>" name="cID">
+              <!-- Add options based on your specific classes -->
+              <option value="fighter" <?php echo ($champions['class_id'] == 'Fighter') ? 'selected' : ''; ?>>Fighter</option>
+              <option value="mage" <?php echo ($champions['class_id'] == 'Mage') ? 'selected' : ''; ?>>Mage</option>
+              <option value="marksman" <?php echo ($champions['class_id'] == 'Marksman') ? 'selected' : ''; ?>>Marksman</option>
+              <option value="support" <?php echo ($champions['class_id'] == 'Support') ? 'selected' : ''; ?>>Support</option>
+              <option value="tank" <?php echo ($champions['class_id'] == 'Tank') ? 'selected' : ''; ?>>Tank</option>
+            </select>
   </div>
     <div class="mb-3">
     <label for="lID<?php echo $champions['champ_id']; ?>" class="form-label">Lane</label>
