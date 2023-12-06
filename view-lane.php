@@ -1,4 +1,6 @@
-
+<div>
+  <canvas id="myChart"></canvas>
+</div>
 <?php
 function countTop() {
     try {
@@ -85,11 +87,11 @@ function countSup() {
 $countSup = countSup();
 ?>
 
-<div id="myChart" style="width: 100%; max-width: 600px; height: 1000px; margin: auto;"></div>
+<div id="myChart1" style="width: 100%; max-width: 600px; height: 1000px; margin: auto;"></div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
-  const ctx = document.getElementById('myChart');
+  const ctx = document.getElementById('myChart1');
   new Chart(ctx, {
     type: 'bar',
     data: {
