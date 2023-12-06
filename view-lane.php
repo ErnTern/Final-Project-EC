@@ -87,7 +87,10 @@ function countSup() {
 $countSup = countSup();
 ?>
 
-<div id="myChart" style="width: 100%; max-width: 600px; height: 1000px; margin: auto;"></div>
+<div id="myChartContainer" style="width: 100%; max-width: 600px; height: 400px; margin: auto;">
+  <canvas id="myChart"></canvas>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
@@ -100,12 +103,12 @@ $countSup = countSup();
         label: 'Number of Champions Per Lane',
         data: [<?php echo $countTop; ?>, <?php echo $countJg; ?>, <?php echo $countMid; ?>, <?php echo $countBot; ?>, <?php echo $countSup; ?>],
         backgroundColor: [
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(255, 206, 86, 0.4)',
-        'rgba(255, 206, 86, 0.6)',
-        'rgba(255, 206, 86, 0.8)',
-        'rgba(255, 206, 86, 1)',
-          ],
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(255, 206, 86, 0.4)',
+          'rgba(255, 206, 86, 0.6)',
+          'rgba(255, 206, 86, 0.8)',
+          'rgba(255, 206, 86, 1)',
+        ],
         borderColor: [
           'rgba(255, 206, 86, 1)',
           'rgba(255, 206, 86, 1)',
@@ -116,5 +119,14 @@ $countSup = countSup();
         borderWidth: 1
       }]
     },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true,
+          max: <?php echo max($countTop, $countJg, $countMid, $countBot, $countSup); ?> + 1
+        }
+      }
+    }
   });
 </script>
+
