@@ -71,7 +71,7 @@
                                                 <p class="card-text">
                                                     <ul class="list-group">
                                                         <?php
-                                                        $classChampions = selectClassByChampion($champions['class_id']);
+                                                        $classChampions = selectClassByChampion($champions['champ_id']);
                                                         
                                                         while ($champion = $classChampions->fetch_assoc()) {
                                                         ?>
