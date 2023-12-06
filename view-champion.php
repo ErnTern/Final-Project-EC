@@ -9,7 +9,7 @@ body {
     border-radius: 10px; /* Adjust the radius as needed */
     overflow: hidden; /* Ensure rounded corners are visible */
 }
-tbody tr:nth-of-type(even) {
+tbody tr:nth-of-type(odd) {
     background-color: #f2f2f2; /* Light grey background for even rows */
 }
 
