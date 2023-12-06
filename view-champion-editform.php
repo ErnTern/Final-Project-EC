@@ -35,11 +35,11 @@
     <label for="cID<?php echo $champions['champ_id']; ?>" class="form-label">Class</label>
        <select class="form-select" id="cID<?php echo $champions['champ_id']; ?>" name="cID">
               <!-- Add options based on your specific classes -->
-              <option value="fighter" <?php echo ($champions['class_id'] == 'Fighter') ? 'selected' : ''; ?>>Fighter</option>
-              <option value="mage" <?php echo ($champions['class_id'] == 'Mage') ? 'selected' : ''; ?>>Mage</option>
-              <option value="marksman" <?php echo ($champions['class_id'] == 'Marksman') ? 'selected' : ''; ?>>Marksman</option>
-              <option value="support" <?php echo ($champions['class_id'] == 'Support') ? 'selected' : ''; ?>>Support</option>
-              <option value="tank" <?php echo ($champions['class_id'] == 'Tank') ? 'selected' : ''; ?>>Tank</option>
+              <option value="Assassin" <?php echo ($champions['class_id'] == 'Assassin') ? 'selected' : ''; ?>>Assassin</option>
+              <option value="Fighter" <?php echo ($champions['class_id'] == 'Fighter') ? 'selected' : ''; ?>>Fighter</option>
+              <option value="Mage" <?php echo ($champions['class_id'] == 'Mage') ? 'selected' : ''; ?>>Mage</option>
+              <option value="Marksman" <?php echo ($champions['class_id'] == 'Marksman') ? 'selected' : ''; ?>>Marksman</option>
+              <option value="Tank" <?php echo ($champions['class_id'] == 'Tank') ? 'selected' : ''; ?>>Tank</option>
             </select>
   </div>
     <div class="mb-3">
