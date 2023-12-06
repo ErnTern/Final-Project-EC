@@ -1,6 +1,4 @@
-<div>
-  <canvas id="myChart"></canvas>
-</div>
+
 <?php
 function countTop() {
     try {
