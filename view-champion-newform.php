@@ -32,7 +32,13 @@
   </div>
     <div class="mb-3">
     <label for="lID" class="form-label">Lane</label>
-    <input type="text" class="form-control" id="lID" name="lID">
+   <select class="form-select" id="lID" name="lID">
+              <option value="top">Top</option>
+              <option value="jungle">Jungle</option>
+              <option value="mid">Mid</option>
+              <option value="bot">Bot</option>
+              <option value="support">Support</option>
+            </select>
   </div>
             <input type ='hidden' name='actionType' value="Add">
   <button type="submit" class="btn btn-primary">Save</button>
