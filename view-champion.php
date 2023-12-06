@@ -37,9 +37,6 @@ tbody tr:nth-of-type(even) {
 <?php
 while ($champions = $champion->fetch_assoc()) {
 ?>
-    tbody tr:nth-of-type(even) {
-    background-color: #f2f2f2; /* Light grey background for even rows */
-}
   <tr>
     <td><strong><?php echo $champions['champ_name']; ?></strong></td>
     <td><?php echo $champions['class_id']; ?></td>
