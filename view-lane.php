@@ -89,7 +89,7 @@ function countSup() {
 $countSup = countSup();
 ?>
 
-<div id="myChart" style="height: 100vh; width: 100%; position: fixed; top: 0; left: 0;"></div>
+<div id="myChart" style="height: 100vh; width: 100vw; position: fixed; top: 0; left: 0;"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
