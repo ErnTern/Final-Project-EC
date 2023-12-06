@@ -1,8 +1,6 @@
 <div>
   <canvas id="myChart"></canvas>
 </div>
-
-
 <?php
 function countTop() {
     try {
@@ -18,10 +16,8 @@ function countTop() {
         throw $e;
     }
 }
-
 $countTop = countTop();
 ?>
-
 <?php
 function countJg() {
     try {
@@ -37,10 +33,8 @@ function countJg() {
         throw $e;
     }
 }
-
 $countJg = countJg();
 ?>
-
 <?php
 function countMid() {
     try {
@@ -56,11 +50,8 @@ function countMid() {
         throw $e;
     }
 }
-
 $countMid = countMid();
 ?>
-
-
 <?php
 function countBot() {
     try {
@@ -76,11 +67,8 @@ function countBot() {
         throw $e;
     }
 }
-
 $countBot = countBot();
 ?>
-
-
 <?php
 function countSup() {
     try {
@@ -96,15 +84,14 @@ function countSup() {
         throw $e;
     }
 }
-<?php
+
 $countSup = countSup();
 ?>
-<div id="myChart" style="width: 80%; max-width: 600px; height: 400px; margin: auto;"></div>
+<div id="myChart" style="width:100%; max-width:600px; height:500px;"></div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
   const ctx = document.getElementById('myChart');
-
   new Chart(ctx, {
     type: 'bar',
     data: {
@@ -113,12 +100,12 @@ $countSup = countSup();
         label: 'Number of Champions Per Lane',
         data: [<?php echo $countTop; ?>, <?php echo $countJg; ?>, <?php echo $countMid; ?>, <?php echo $countBot; ?>, <?php echo $countSup; ?>],
         backgroundColor: [
-          'rgba(255, 206, 86, 0.2)',
-          'rgba(255, 206, 86, 0.4)',
-          'rgba(255, 206, 86, 0.6)',
-          'rgba(255, 206, 86, 0.8)',
-          'rgba(255, 206, 86, 1)',
-        ],
+        'rgba(255, 206, 86, 0.2)',
+        'rgba(255, 206, 86, 0.4)',
+        'rgba(255, 206, 86, 0.6)',
+        'rgba(255, 206, 86, 0.8)',
+        'rgba(255, 206, 86, 1)',
+          ],
         borderColor: [
           'rgba(255, 206, 86, 1)',
           'rgba(255, 206, 86, 1)',
@@ -130,7 +117,7 @@ $countSup = countSup();
       }]
     },
     options: {
-      responsive: true,
+      responsive: false,
       maintainAspectRatio: false,
       scales: {
         y: {
