@@ -9,7 +9,7 @@ body {
     border-radius: 10px; /* Adjust the radius as needed */
     overflow: hidden; /* Ensure rounded corners are visible */
 }
-tbody tr:nth-of-type(odd) {
+tbody tr:nth-of-type(even) {
     background-color: #f2f2f2; /* Light grey background for even rows */
 }
 
@@ -37,6 +37,9 @@ tbody tr:nth-of-type(odd) {
 <?php
 while ($champions = $champion->fetch_assoc()) {
 ?>
+    tbody tr:nth-of-type(even) {
+    background-color: #f2f2f2; /* Light grey background for even rows */
+}
   <tr>
     <td><strong><?php echo $champions['champ_name']; ?></strong></td>
     <td><?php echo $champions['class_id']; ?></td>
