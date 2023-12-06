@@ -125,14 +125,5 @@ $countSup = countSup();
         borderWidth: 1
       }]
     },
-    options: {
-      responsive: false,
-      maintainAspectRatio: false,
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      }
-    }
   });
 </script>
