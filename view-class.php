@@ -1,7 +1,6 @@
-<div id="myChartContainer" style="width: 100%; max-width: 400px; height: 400px; margin: auto;">
+<div>
   <canvas id="myChart1"></canvas>
 </div>
-
 <?php
 function countA() {
     try {
@@ -92,6 +91,10 @@ function countT() {
 
 $countT = countT();
 ?>
+
+<div id="myChartContainer" style="width: 100%; max-width: 400px; height: 400px; margin: auto;">
+  <canvas id="myChart1"></canvas>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
