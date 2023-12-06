@@ -87,7 +87,7 @@ function countSup() {
 $countSup = countSup();
 ?>
 
-<div id="myChartContainer" style="width: 100%; max-width: 400px; height: 300px; margin: auto;">
+<div id="myChartContainer" style="width: 100%; max-width: 400px; height: 600px; margin: auto;">
   <canvas id="myChart"></canvas>
 </div>
 
