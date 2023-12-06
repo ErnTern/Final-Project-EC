@@ -125,7 +125,9 @@ $countSup = countSup();
           beginAtZero: true,
           max: <?php echo max($countTop, $countJg, $countMid, $countBot, $countSup); ?> + 1
         }
-      }
+      },
+      maintainAspectRatio: false,
+      aspectRatio: 0.8 // You can adjust this value to control the aspect ratio
     }
   });
 </script>
