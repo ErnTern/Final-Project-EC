@@ -89,7 +89,8 @@ function countSup() {
 $countSup = countSup();
 ?>
 
-<div id="myChart" style="height: 370px; width: 100%;"></div>
+<div id="myChart" style="height: 100vh; width: 100%; position: fixed; top: 0; left: 0;"></div>
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <script>
@@ -100,14 +101,20 @@ $countSup = countSup();
       labels: ['Top', 'Jungle', 'Mid', 'Bottom', 'Support'],
       datasets: [{
         label: 'Number of Champions Per Lane',
-        data: [<?php echo $countTop; ?>, <?php echo $countJg; ?>, <?php echo $countMid; ?>, <?php echo $countBot; ?>, <?php echo $countSup; ?>],
+        data: [
+          <?php echo $countTop; ?>,
+          <?php echo $countJg; ?>,
+          <?php echo $countMid; ?>,
+          <?php echo $countBot; ?>,
+          <?php echo $countSup; ?>
+        ],
         backgroundColor: [
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(255, 206, 86, 0.4)',
-        'rgba(255, 206, 86, 0.6)',
-        'rgba(255, 206, 86, 0.8)',
-        'rgba(255, 206, 86, 1)',
-          ],
+          'rgba(255, 206, 86, 0.2)',
+          'rgba(255, 206, 86, 0.4)',
+          'rgba(255, 206, 86, 0.6)',
+          'rgba(255, 206, 86, 0.8)',
+          'rgba(255, 206, 86, 1)',
+        ],
         borderColor: [
           'rgba(255, 206, 86, 1)',
           'rgba(255, 206, 86, 1)',
