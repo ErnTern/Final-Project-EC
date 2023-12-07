@@ -62,25 +62,36 @@
     <div class="container">
 <h1><span class="badge text-bg-light">Champions by Class</span></h1>
         <div class="card-group">
-                            <?PHP
-                            function getAllClasses() {
-                                    try {
-                                        $conn = get_db_connection();
-                                        $stmt = $conn->prepare("SELECT champ_id, lane_id FROM Champion WHERE class_id = 'Fighter'");
-                                        $stmt->execute();
-                                        $result = $stmt->get_result();
-                                        $conn->close();
-                                        return $result;
-                                    } catch (Exception $e) {
-                                        $conn->close();
-                                        throw $e;
-                                    }
-                                }
-                                ?>
-                                            <?php
-            
-        
-        ?>
+                            <?php
+            function getAllClasses() {
+                try {
+                    $conn = get_db_connection();
+                    $stmt = $conn->prepare("SELECT champ_id, lane_id FROM Champion WHERE class_id = 'Fighter'");
+                    $stmt->execute();
+                    $result = $stmt->get_result();
+                    $conn->close();
+                    return $result;
+                } catch (Exception $e) {
+                    $conn->close();
+                    throw $e;
+                }
+            }
+
+            $classes = getAllClasses();
+
+            while ($class = $classes->fetch_assoc()) {
+                ?>
+                <div class="class-section">
+                    <h2 class="class-title">Class: Fighter</h2>
+                    <ul class="champion-list">
+                        <li class="champion-item">
+                            <?php echo $class['champ_id']; ?> - <?php echo $class['lane_id']; ?>
+                        </li>
+                    </ul>
+                </div>
+                <?php
+            }
+            ?>
         </div>
     </div>
 </body>
