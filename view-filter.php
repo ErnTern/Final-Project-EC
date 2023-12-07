@@ -66,7 +66,7 @@
         function getAllClasses() {
             try {
                 $conn = get_db_connection();
-                $stmt = $conn->prepare("SELECT champ_id, lane_id FROM Champion WHERE class_id = 'Fighter'");
+                $stmt = $conn->prepare("SELECT champ_name, lane_id FROM Champion WHERE class_id = 'Fighter'");
                 $stmt->execute();
                 $result = $stmt->get_result();
                 $conn->close();
