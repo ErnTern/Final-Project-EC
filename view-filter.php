@@ -11,16 +11,8 @@
         }
 
         .table {
-            border-radius: 10px; /* Adjust the radius as needed */
-            overflow: hidden; /* Ensure rounded corners are visible */
-        }
-/*
-        th {
-            border-radius: 10px 10px 0 0; /* Top rounded corners */
-        }
-/*
-        td {
-            border-radius: 0 0 10px 10px; /* Bottom rounded corners */
+            border-radius: 10px;
+            overflow: hidden; 
         }
 
         .container {
@@ -34,7 +26,7 @@
         }
 
         .card {
-            width: 200px; /* Adjust the card width as needed */
+            width: 200px;
             border: 1px solid #ccc;
             border-radius: 10px;
             overflow: hidden;
