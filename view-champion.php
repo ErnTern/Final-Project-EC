@@ -8,7 +8,7 @@
 
   .container {
     opacity: 0;
-    animation: fadeIn 1.0s ease-in-out; 
+    animation: fadeIn 1.0s ease-in-out forwards; 
   }
 
   .table {
