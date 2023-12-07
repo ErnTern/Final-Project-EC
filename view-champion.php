@@ -7,17 +7,14 @@
   }
 
   .container {
-    opacity: 0; /* Set initial opacity to 0 */
-    animation: fadeIn 1.0s ease-in-out forwards; /* Use animation to gradually increase opacity */
+    opacity: 0;
+    animation: fadeIn 1.0s ease-in-out; 
   }
 
   .table {
-    border-radius: 10px; /* Adjust the radius as needed */
-    overflow: hidden; /* Ensure rounded corners are visible */
+    border-radius: 10px; 
+    overflow: hidden; 
   }
-
-  tbody tr:nth-of-type(even) {
-    background-color: #f2f2f2; /* Light grey background for even rows */
   }
 
   @keyframes fadeIn {
