@@ -71,7 +71,7 @@
                             function getAllAssassinChampions() {
                                 try {
                                     $conn = get_db_connection();
-                                    $stmt = $conn->prepare("SELECT champ_name, lane_id FROM Champion WHERE class_id = 'Assassin'");
+                                    $stmt = $conn->prepare("SELECT champ_name, lane_id FROM Champion WHERE class_id = 'Assassin' ORDER BY champ_name");
                                     $stmt->execute();
                                     $result = $stmt->get_result();
                                     $conn->close();
@@ -105,7 +105,7 @@
                             function getAllFighterChampions() {
                                 try {
                                     $conn = get_db_connection();
-                                    $stmt = $conn->prepare("SELECT champ_name, lane_id FROM Champion WHERE class_id = 'Fighter'");
+                                    $stmt = $conn->prepare("SELECT champ_name, lane_id FROM Champion WHERE class_id = 'Fighter' ORDER BY champ_name");
                                     $stmt->execute();
                                     $result = $stmt->get_result();
                                     $conn->close();
@@ -139,7 +139,7 @@
                             function getAllMageChampions() {
                                 try {
                                     $conn = get_db_connection();
-                                    $stmt = $conn->prepare("SELECT champ_name, lane_id FROM Champion WHERE class_id = 'Mage'");
+                                    $stmt = $conn->prepare("SELECT champ_name, lane_id FROM Champion WHERE class_id = 'Mage' ORDER BY champ_name");
                                     $stmt->execute();
                                     $result = $stmt->get_result();
                                     $conn->close();
@@ -173,7 +173,7 @@
                             function getAllMarksmanChampions() {
                                 try {
                                     $conn = get_db_connection();
-                                    $stmt = $conn->prepare("SELECT champ_name, lane_id FROM Champion WHERE class_id = 'Marksman'");
+                                    $stmt = $conn->prepare("SELECT champ_name, lane_id FROM Champion WHERE class_id = 'Marksman' ORDER BY champ_name");
                                     $stmt->execute();
                                     $result = $stmt->get_result();
                                     $conn->close();
@@ -207,7 +207,7 @@
                             function getAllTankChampions() {
                                 try {
                                     $conn = get_db_connection();
-                                    $stmt = $conn->prepare("SELECT champ_name, lane_id FROM Champion WHERE class_id = 'Tank'");
+                                    $stmt = $conn->prepare("SELECT champ_name, lane_id FROM Champion WHERE class_id = 'Tank' ORDER BY champ_name");
                                     $stmt->execute();
                                     $result = $stmt->get_result();
                                     $conn->close();
