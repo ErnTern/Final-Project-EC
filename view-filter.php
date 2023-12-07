@@ -81,11 +81,14 @@
 
             while ($class = $classes->fetch_assoc()) {
                 ?>
-                <div class="class-section">
-                    <h2 class="class-title">Class: Fighter</h2>
-                    <ul class="champion-list">
-                        <li class="champion-item">
-                            <?php echo $class['champ_id']; ?> - <?php echo $class['lane_id']; ?>
+                ?>
+                <div class="card">
+                <div class="card-body">
+                <h5 class="card-title">Fighter</h5>
+                <p class="card-text">
+                <ul class="list-group">
+                        <?php
+                            <?php echo $class['champ_name']; ?> - <?php echo $class['lane_id']; ?>
                         </li>
                     </ul>
                 </div>
