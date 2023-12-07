@@ -5,26 +5,6 @@
     background-size: cover;
     background-position: center;
   }
-
-  .container {
-    opacity: 0;
-    animation: fadeIn 1.0s ease-in-out forwards; 
-  }
-
-  .table {
-    border-radius: 10px; 
-    overflow: hidden; 
-  }
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 </style>
 </head>
 <body>
