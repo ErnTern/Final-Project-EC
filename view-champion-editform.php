@@ -28,7 +28,7 @@
       <div class="modal-body">
   <form method="post" action="">
   <div class="mb-3">
-    <label for="cName<?php echo $champions['champ_id']; ?>" class="form-label">champions Name</label>
+    <label for="cName<?php echo $champions['champ_id']; ?>" class="form-label">Champion's Name</label>
     <input type="text" class="form-control" id="cName<?php echo $champions['champ_id']; ?>" name="cName" value = "<?php echo $champions['champ_name']; ?>">
   </div>
     <div class="mb-3">
