@@ -96,6 +96,40 @@
                     </p>
                 </div>
             </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Assassin</h5>
+                    <p class="card-text">
+                        <ul class="list-group">
+                            <?php
+                            function getAllAssassinChampions() {
+                                try {
+                                    $conn = get_db_connection();
+                                    $stmt = $conn->prepare("SELECT champ_name, lane_id FROM Champion WHERE class_id = 'Assassin'");
+                                    $stmt->execute();
+                                    $result = $stmt->get_result();
+                                    $conn->close();
+                                    return $result;
+                                } catch (Exception $e) {
+                                    $conn->close();
+                                    throw $e;
+                                }
+                            }
+
+                            $assassinChampions = getAllAssassinChampions();
+
+                            while ($champion = $assassinChampions->fetch_assoc()) {
+                                ?>
+                                <li class="list-group-item">
+                                    <?php echo $champion['champ_name']; ?> - <?php echo $champion['lane_id']; ?>
+                                </li>
+                                <?php
+                            }
+                            ?>
+                        </ul>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
