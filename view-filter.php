@@ -60,42 +60,43 @@
 </head>
 <body>
     <div class="container">
-<h1><span class="badge text-bg-light">Champions by Class</span></h1>
+        <h1><span class="badge text-bg-light">Champions by Class</span></h1>
         <div class="card-group">
-                           <?php
-        function getAllClasses() {
-            try {
-                $conn = get_db_connection();
-                $stmt = $conn->prepare("SELECT champ_name, lane_id FROM Champion WHERE class_id = 'Fighter'");
-                $stmt->execute();
-                $result = $stmt->get_result();
-                $conn->close();
-                return $result;
-            } catch (Exception $e) {
-                $conn->close();
-                throw $e;
-            }
-        }
-
-        $classes = getAllClasses();
-<div class="card">
+            <div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Fighter</h5>
-        while ($class = $classes->fetch_assoc()) {
-            ?>
                     <p class="card-text">
                         <ul class="list-group">
-                            <li class="list-group-item">
-                                <?php echo $class['champ_name']; ?> - <?php echo $class['lane_id']; ?>
-                            </li>
+                            <?php
+                            function getAllFighterChampions() {
+                                try {
+                                    $conn = get_db_connection();
+                                    $stmt = $conn->prepare("SELECT champ_name, lane_id FROM Champion WHERE class_id = 'Fighter'");
+                                    $stmt->execute();
+                                    $result = $stmt->get_result();
+                                    $conn->close();
+                                    return $result;
+                                } catch (Exception $e) {
+                                    $conn->close();
+                                    throw $e;
+                                }
+                            }
+
+                            $fighterChampions = getAllFighterChampions();
+
+                            while ($champion = $fighterChampions->fetch_assoc()) {
+                                ?>
+                                <li class="list-group-item">
+                                    <?php echo $champion['champ_name']; ?> - <?php echo $champion['lane_id']; ?>
+                                </li>
+                                <?php
+                            }
+                            ?>
                         </ul>
                     </p>
                 </div>
             </div>
-            <?php
-        }
-        ?>
+        </div>
     </div>
-</div>
 </body>
 </html>
