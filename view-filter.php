@@ -63,12 +63,22 @@
 <h1><span class="badge text-bg-light">Champions by Class</span></h1>
         <div class="card-group">
                             <?PHP
-                            function getAllClasses($conn) {
-                            $sql = "SELECT DISTINCT class_id FROM Class";
-                            $result = $conn->query($sql);
-                            return $result;
+                            function getAllClasses() {
+                                    try {
+                                        $conn = get_db_connection();
+                                        $stmt = $conn->prepare("SELECT DISTINCT class_id FROM Class");
+                                        $stmt->execute();
+                                        $result = $stmt->get_result();
+                                        $conn->close();
+                                        return $result;
+                                    } catch (Exception $e) {
+                                        $conn->close();
+                                        throw $e;
+                                    }
+                                }
                             ?>
-                                 <?php
+                                 <?PHP
+                                    $class1 = getAllClasses($conn);
                                     while ($class1 = $classes->fetch_assoc()) {
                                         $classId = $class1['class_id'];
                                         $champions = selectClassByChampion($classId, $conn);
