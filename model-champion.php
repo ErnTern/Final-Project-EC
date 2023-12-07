@@ -2,7 +2,7 @@
 function selectChampion() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT champ_id, champ_name, class_id, lane_id FROM `Champion`");
+        $stmt = $conn->prepare("SELECT champ_id, champ_name, class_id, lane_id FROM `Champion` ORDER BY champ_name");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
