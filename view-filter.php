@@ -66,7 +66,7 @@
                             function getAllClasses() {
                                     try {
                                         $conn = get_db_connection();
-                                        $stmt = $conn->prepare("SELECT DISTINCT class_id FROM Class");
+                                        $stmt = $conn->prepare("SELECT champ_id, lane_id FROM Champion WHERE class_id = 'Fighter'");
                                         $stmt->execute();
                                         $result = $stmt->get_result();
                                         $conn->close();
@@ -76,29 +76,7 @@
                                         throw $e;
                                     }
                                 }
-                            ?>
-                                 <?PHP
-                                    $class1 = getAllClasses($conn);
-                                    while ($class1 = $classes->fetch_assoc()) {
-                                        $classId = $class1['class_id'];
-                                        $champions = selectClassByChampion($classId, $conn);
-                            
-                                        if ($champions->num_rows > 0) {
-                                            ?>
-                                            <div class="class-section">
-                                                <h2 class="class-title">Class: <?php echo $classId; ?></h2>
-                                                <ul class="champion-list">
-                                                    <?php
-                                                    while ($champion = $champions->fetch_assoc()) {
-                                                        ?>
-                                                        <li class="champion-item">
-                                                            <?php echo $champion['champ_name']; ?> - <?php echo $champion['lane_id']; ?>
-                                                        </li>
-                                                        <?php
-                                                    }
-                                                    ?>
-                                                </ul>
-                                            </div>
+                                ?>
                                             <?php
             }
         }
