@@ -78,12 +78,11 @@
         }
 
         $classes = getAllClasses();
-
-        while ($class = $classes->fetch_assoc()) {
-            ?>
-            <div class="card">
+<div class="card">
                 <div class="card-body">
                     <h5 class="card-title">Fighter</h5>
+        while ($class = $classes->fetch_assoc()) {
+            ?>
                     <p class="card-text">
                         <ul class="list-group">
                             <li class="list-group-item">
