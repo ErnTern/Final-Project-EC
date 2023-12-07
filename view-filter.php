@@ -87,7 +87,7 @@
                     <p class="card-text">
                         <ul class="list-group">
                             <li class="list-group-item">
-                                <?php echo $class['champ_id']; ?> - <?php echo $class['lane_id']; ?>
+                                <?php echo $class['champ_name']; ?> - <?php echo $class['lane_id']; ?>
                             </li>
                         </ul>
                     </p>
