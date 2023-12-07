@@ -62,40 +62,41 @@
     <div class="container">
 <h1><span class="badge text-bg-light">Champions by Class</span></h1>
         <div class="card-group">
-                            <?php
-            function getAllClasses() {
-                try {
-                    $conn = get_db_connection();
-                    $stmt = $conn->prepare("SELECT champ_id, lane_id FROM Champion WHERE class_id = 'Fighter'");
-                    $stmt->execute();
-                    $result = $stmt->get_result();
-                    $conn->close();
-                    return $result;
-                } catch (Exception $e) {
-                    $conn->close();
-                    throw $e;
-                }
+                           <?php
+        function getAllClasses() {
+            try {
+                $conn = get_db_connection();
+                $stmt = $conn->prepare("SELECT champ_id, lane_id FROM Champion WHERE class_id = 'Fighter'");
+                $stmt->execute();
+                $result = $stmt->get_result();
+                $conn->close();
+                return $result;
+            } catch (Exception $e) {
+                $conn->close();
+                throw $e;
             }
+        }
 
-            $classes = getAllClasses();
+        $classes = getAllClasses();
 
-            while ($class = $classes->fetch_assoc()) {
-                ?>
-                ?>
-                <div class="card">
-                <div class="card-body">
-                <h5 class="card-title">Fighter</h5>
-                <p class="card-text">
-                <ul class="list-group">
-                        <?php
-                            <?php echo $class['champ_name']; ?> - <?php echo $class['lane_id']; ?>
-                        </li>
-                    </ul>
-                </div>
-                <?php
-            }
+        while ($class = $classes->fetch_assoc()) {
             ?>
-        </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Fighter</h5>
+                    <p class="card-text">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <?php echo $class['champ_id']; ?> - <?php echo $class['lane_id']; ?>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <?php
+        }
+        ?>
     </div>
+</div>
 </body>
 </html>
