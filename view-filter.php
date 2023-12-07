@@ -62,30 +62,31 @@
     <div class="container">
 <h1><span class="badge text-bg-light">Champions by Class</span></h1>
         <div class="card-group">
-                                <?php
-                                        while ($champions = $class1->fetch_assoc()) {
-                                        ?>
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <h5 class="card-title"><?php echo $champions['class_id']; ?></h5>
-                                                <p class="card-text">
-                                                    <ul class="list-group">
-                                                        <?php
-                                                        $classChampions = selectClassByChampion($champions['class_id']);
-                                                        
-                                                        while ($champion = $classChampions->fetch_assoc()) {
-                                                        ?>
-                                                            <li class="list-group-item"><?php echo $champion['champ_name']; ?> - <?php echo $champion['lane_id']; ?></li>
-                                                        <?php
-                                                        }
-                                                        ?>
-                                                    </ul>
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <?php
-                                        }
-                                        ?>
+                                 <?php
+        while ($class1 = $classes->fetch_assoc()) {
+            $classId = $class1['class_id'];
+            $champions = selectClassByChampion($classId, $conn);
+
+            if ($champions->num_rows > 0) {
+                ?>
+                <div class="class-section">
+                    <h2 class="class-title">Class: <?php echo $classId; ?></h2>
+                    <ul class="champion-list">
+                        <?php
+                        while ($champion = $champions->fetch_assoc()) {
+                            ?>
+                            <li class="champion-item">
+                                <?php echo $champion['champ_name']; ?> - <?php echo $champion['lane_id']; ?>
+                            </li>
+                            <?php
+                        }
+                        ?>
+                    </ul>
+                </div>
+                <?php
+            }
+        }
+        ?>
         </div>
     </div>
 </body>
