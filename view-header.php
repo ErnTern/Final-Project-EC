@@ -9,7 +9,7 @@
   <body>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="https://png2.cleanpng.com/sh/f05eb95757fcc10d47bf8b9109c33529/L0KzQYm3VcA0N5ZriZH0aYP2gLBuTfxmaZh6fZ94Zj3vdbjsjvR0NZR0heJAdHX1PbrqjB50NaNujtd3LYLsf8W0hBFubaQyhNdwZX7ng368gfVjOpI6ftdqOXXpQXA6WcU2OWE4SKMAMkW2RoK5VMc6PmIziNDw/kisspng-league-of-legends-computer-icons-riven-riot-games-legends-5aeb2a5fea9ef1.395510301525361247961.png" width="50" height="auto" alt="..."></a>
+    <a class="navbar-brand" href="#"><img src="https://banner2.cleanpng.com/20180503/cpq/kisspng-league-of-legends-computer-icons-riven-riot-games-legends-5aeb2a5fc077c7.5067134315253612477884.jpg" width="50" height="auto" alt="..."></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
